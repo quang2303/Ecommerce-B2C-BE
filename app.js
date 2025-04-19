@@ -30,7 +30,7 @@ app.set("view engine", "ejs");
 // Add headers before the routes are defined
 app.use(
   cors({
-    origin: ["http://localhost:5173", "https://ptstore.vercel.app/"], // Thêm origin của bạn
+    origin: ["https://ptstore.vercel.app/"], // Thêm origin của bạn
     methods: ["GET", "POST", "PUT", "DELETE", "PATCH"],
     allowedHeaders: ["Content-Type", "Authorization"], // Quan trọng!
     exposedHeaders: ["Authorization"], // Cho phép client đọc header
